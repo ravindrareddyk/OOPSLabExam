@@ -95,7 +95,6 @@
 
 // ✅ Valid student credentials
 const validUsers = {
-
   "N230245": "2467",
   "O230040": "1717",
   "O230080": "9373",
@@ -172,7 +171,6 @@ const validUsers = {
   "S230457": "4671",
   "S230486": "3689",
   "R210118": "2730"
-
 };
 
 // ✅ Question list
@@ -292,11 +290,11 @@ const questions = [
 // ✅ Fixed question assignment (id → question index)
 // Fixed question assignment (id → question index or indices)
 // Use arrays when you want a pool to choose from (one picked each login).
-const questionAssignments = {
-  "S230542": [5, 15],    // choose ONE of these every login
-  "S231195": 16          // single question (works too)
-  // add more as needed
-};
+// const questionAssignments = {
+//   "S230542": [5, 15],    // choose ONE of these every login
+//   "S231195": 16          // single question (works too)
+//   // add more as needed
+// };
 
 // helper: convert an assigned numeric index to the actual question text
 function questionFromNumber(n) {
