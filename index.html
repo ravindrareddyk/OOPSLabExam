@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -9,111 +10,293 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    :root{
+    :root {
       --bg-1: #e6f0ff;
       --bg-2: #f3fbff;
       --accent: #2563eb;
       --muted: #6b7280;
-      --card-bg: rgba(255,255,255,0.86);
-      --shadow: 0 10px 30px rgba(18,25,40,0.08);
+      --card-bg: rgba(255, 255, 255, 0.86);
+      --shadow: 0 10px 30px rgba(18, 25, 40, 0.08);
       --radius: 14px;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background: linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 100%);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:28px;
-      color:#111827;
+
+    * {
+      box-sizing: border-box
     }
 
-    .card{
-      width:100%;
-      max-width:880px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.98), var(--card-bg));
+    html,
+    body {
+      height: 100%
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px;
+      color: #111827;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 880px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), var(--card-bg));
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      overflow:hidden;
+      overflow: hidden;
       border: 1px solid rgba(14, 48, 88, 0.04);
     }
 
-    .card-header{
-      padding:22px 28px;
-      border-bottom: 1px solid rgba(14,48,88,0.04);
-      display:flex;
-      gap:18px;
-      align-items:center;
+    .card-header {
+      padding: 22px 28px;
+      border-bottom: 1px solid rgba(14, 48, 88, 0.04);
+      display: flex;
+      gap: 18px;
+      align-items: center;
     }
-    .logo{
-      width:64px; height:64px;
-      border-radius:12px;
+
+    .logo {
+      width: 64px;
+      height: 64px;
+      border-radius: 12px;
       background: linear-gradient(180deg, #123d94 0%, #2b6ce6 100%);
-      color:#fff; display:flex; align-items:center; justify-content:center;
-      font-weight:700; font-size:20px; box-shadow: 0 8px 24px rgba(43,108,230,0.12);
-    }
-    .title h1{ margin:0; font-size:20px; font-weight:700 }
-    .title p{ margin:4px 0 0; color:var(--muted); font-size:13px }
-
-    .card-body{
-      padding:26px 28px;
-      display:flex;
-      gap:20px;
-      align-items:flex-start;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 20px;
+      box-shadow: 0 8px 24px rgba(43, 108, 230, 0.12);
     }
 
-    .left-panel{ flex:1; min-width:260px }
-    .right-panel{ width:380px; min-width:260px }
-
-    .field{ display:flex; flex-direction:column; gap:8px; margin-bottom:12px }
-    .label-text{ font-size:13px; color:var(--muted); font-weight:600 }
-    input[type="text"], input[type="password"], textarea {
-      padding:12px 14px; border-radius:10px;
-      border:1px solid rgba(16,24,40,0.06);
-      background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(250,250,250,0.96));
-      font-size:15px; outline:none;
+    .title h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700
     }
-    input:focus, textarea:focus{ box-shadow: 0 8px 24px rgba(37,99,235,0.08); border-color:#3b82f6 }
 
-    .actions{ display:flex; gap:12px; margin-top:6px }
-    .btn{ padding:10px 16px; border-radius:10px; font-weight:700; cursor:pointer; border:none }
-    .btn.primary{ background: linear-gradient(180deg,#2563eb,#1e40af); color:#fff }
-    .btn.ghost{ background:transparent; color:#374151; border:1px solid rgba(55,65,81,0.06) }
+    .title p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 13px
+    }
 
-    .hint{ color:var(--muted); font-size:13px; margin-top:10px }
+    .card-body {
+      padding: 26px 28px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
 
-    .card-footer{ padding:14px 20px; border-top:1px solid rgba(14,48,88,0.04); background:linear-gradient(180deg,#fff,#fbfdff); font-size:13px; color:var(--muted) }
+    .left-panel {
+      flex: 1;
+      min-width: 260px
+    }
+
+    .right-panel {
+      width: 380px;
+      min-width: 260px
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 12px
+    }
+
+    .label-text {
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 600
+    }
+
+    input[type="text"],
+    input[type="password"],
+    textarea {
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(16, 24, 40, 0.06);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(250, 250, 250, 0.96));
+      font-size: 15px;
+      outline: none;
+    }
+
+    input:focus,
+    textarea:focus {
+      box-shadow: 0 8px 24px rgba(37, 99, 235, 0.08);
+      border-color: #3b82f6
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 6px
+    }
+
+    .btn {
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      border: none
+    }
+
+    .btn.primary {
+      background: linear-gradient(180deg, #2563eb, #1e40af);
+      color: #fff
+    }
+
+    .btn.ghost {
+      background: transparent;
+      color: #374151;
+      border: 1px solid rgba(55, 65, 81, 0.06)
+    }
+
+    .hint {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 10px
+    }
+
+    .card-footer {
+      padding: 14px 20px;
+      border-top: 1px solid rgba(14, 48, 88, 0.04);
+      background: linear-gradient(180deg, #fff, #fbfdff);
+      font-size: 13px;
+      color: var(--muted)
+    }
 
     /* Modal */
-    .modal{ display:none; position:fixed; inset:0; z-index:2000; background:rgba(6,11,30,0.52); backdrop-filter: blur(4px); align-items:center; justify-content:center; padding:20px }
-    .modal-panel{ width:100%; max-width:720px; background: linear-gradient(180deg,#ffffff,#fbfdff); border-radius:12px; padding:22px; box-shadow:0 16px 50px rgba(15,23,42,0.28); position:relative; border:1px solid rgba(17,24,39,0.06) }
-    .modal-close{ position:absolute; right:14px; top:12px; background:transparent; border:none; font-size:26px; color:rgba(44,54,66,0.6); cursor:pointer }
-    .modal-header h2{ margin:0; font-size:20px; color:#0f172a }
-    .modal-sub{ margin:6px 0 0 0; color:var(--muted); font-size:13px }
-    .modal-body{ padding:18px 4px; margin-top:10px }
-    .question-text{ font-size:18px; line-height:1.6; color:#111827; background: linear-gradient(180deg, rgba(243,248,255,0.6), rgba(250,250,250,0.6)); padding:18px; border-radius:10px; border:1px solid rgba(16,24,40,0.03); white-space:pre-line }
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      background: rgba(6, 11, 30, 0.52);
+      backdrop-filter: blur(4px);
+      align-items: center;
+      justify-content: center;
+      padding: 20px
+    }
 
-    .modal-actions{ display:flex; justify-content:flex-end; gap:12px; margin-top:14px }
+    .modal-panel {
+      width: 100%;
+      max-width: 720px;
+      background: linear-gradient(180deg, #ffffff, #fbfdff);
+      border-radius: 12px;
+      padding: 22px;
+      box-shadow: 0 16px 50px rgba(15, 23, 42, 0.28);
+      position: relative;
+      border: 1px solid rgba(17, 24, 39, 0.06)
+    }
+
+    .modal-close {
+      position: absolute;
+      right: 14px;
+      top: 12px;
+      background: transparent;
+      border: none;
+      font-size: 26px;
+      color: rgba(44, 54, 66, 0.6);
+      cursor: pointer
+    }
+
+    .modal-header h2 {
+      margin: 0;
+      font-size: 20px;
+      color: #0f172a
+    }
+
+    .modal-sub {
+      margin: 6px 0 0 0;
+      color: var(--muted);
+      font-size: 13px
+    }
+
+    .modal-body {
+      padding: 18px 4px;
+      margin-top: 10px
+    }
+
+    .question-text {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #111827;
+      background: linear-gradient(180deg, rgba(243, 248, 255, 0.6), rgba(250, 250, 250, 0.6));
+      padding: 18px;
+      border-radius: 10px;
+      border: 1px solid rgba(16, 24, 40, 0.03);
+      white-space: pre-line
+    }
+
+    .modal-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin-top: 14px
+    }
 
     /* Exam area */
-    .exam-area{ display:none; padding:18px 4px; margin-top:8px; border-radius:10px; background:linear-gradient(180deg,#fff,#f8fafc); border:1px solid rgba(16,24,40,0.04) }
-    .timer{ font-weight:700; color:#0f172a; font-size:16px }
-    .question-number-badge{ display:inline-block; background:#eef2ff; color:#1e40af; font-weight:700; padding:6px 10px; border-radius:999px; margin-left:8px; font-size:13px }
+    .exam-area {
+      display: none;
+      padding: 18px 4px;
+      margin-top: 8px;
+      border-radius: 10px;
+      background: linear-gradient(180deg, #fff, #f8fafc);
+      border: 1px solid rgba(16, 24, 40, 0.04)
+    }
 
-    .answer-area textarea{ width:100%; min-height:180px; resize:vertical; margin-top:10px }
+    .timer {
+      font-weight: 700;
+      color: #0f172a;
+      font-size: 16px
+    }
 
-    .submitted { padding:12px; border-radius:10px; background:#ecfdf5; color:#065f46; border:1px solid rgba(6,95,70,0.08); margin-top:12px }
+    .question-number-badge {
+      display: inline-block;
+      background: #eef2ff;
+      color: #1e40af;
+      font-weight: 700;
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin-left: 8px;
+      font-size: 13px
+    }
+
+    .answer-area textarea {
+      width: 100%;
+      min-height: 180px;
+      resize: vertical;
+      margin-top: 10px
+    }
+
+    .submitted {
+      padding: 12px;
+      border-radius: 10px;
+      background: #ecfdf5;
+      color: #065f46;
+      border: 1px solid rgba(6, 95, 70, 0.08);
+      margin-top: 12px
+    }
 
     /* small screens */
-    @media (max-width:840px){
-      .card-body{ flex-direction:column; gap:18px }
-      .right-panel{ width:100% }
+    @media (max-width:840px) {
+      .card-body {
+        flex-direction: column;
+        gap: 18px
+      }
+
+      .right-panel {
+        width: 100%
+      }
     }
   </style>
 </head>
+
 <body>
 
   <div class="card" role="main" aria-labelledby="pageTitle">
@@ -143,12 +326,14 @@
             <button class="btn ghost" id="logoutBtn" onclick="clearSession()">Logout</button>
           </div>
 
-          <p class="hint">Once a question is chosen for the session it will be locked until you logout. Back navigation is disabled during the session.</p>
+          <p class="hint">Once a question is chosen for the session it will be locked until you logout. Back navigation
+            is disabled during the session.</p>
         </div>
 
         <div id="sessionInfo" style="display:none; margin-top:14px">
           <div><strong>Logged in as:</strong> <span id="loggedStudent"></span></div>
-          <div style="margin-top:8px"><strong>Current question:</strong> <span id="currentQuestionShort"></span> <span class="question-number-badge" id="qBadge"></span></div>
+          <div style="margin-top:8px"><strong>Current question:</strong> <span id="currentQuestionShort"></span> <span
+              class="question-number-badge" id="qBadge"></span></div>
         </div>
       </div>
 
@@ -156,12 +341,14 @@
         <!-- area for question text if not using modal, plus exam area -->
         <div id="questionPlaceholder" style="display:block">
           <p style="font-weight:700; color:#0f172a; margin-bottom:6px">Welcome</p>
-          <p style="color:var(--muted)">Click <strong>Get Question</strong> to retrieve your assigned question. A modal will appear with the question and a "Start Exam" button.</p>
+          <p style="color:var(--muted)">Click <strong>Get Question</strong> to retrieve your assigned question. A modal
+            will appear with the question and a "Start Exam" button.</p>
         </div>
 
         <div class="exam-area" id="examArea" aria-live="polite">
           <div style="display:flex; justify-content:space-between; align-items:center">
-            <div><strong>Question</strong> <span id="examQuestionBadge" class="question-number-badge" style="display:none"></span></div>
+            <div><strong>Question</strong> <span id="examQuestionBadge" class="question-number-badge"
+                style="display:none"></span></div>
             <div class="timer">Time left: <span id="timerDisplay">--:--</span></div>
           </div>
 
@@ -288,91 +475,119 @@
       "S230457": "4671",
       "S230486": "3689",
       "R210118": "2730"
-    };show difference between public and private members.",
-  "21. Write a C++ program to implement encapsulation using private variables.",
-  "22. Write a C++ program with public, private and protected members.",
-  "23. Write a C++ program using getter and setter functions.",
-  "24. Write a C++ program to restrict direct access to data members.",
+    };
 
-  // 🔹 INHERITANCE
-  "25. Write a C++ program to demonstrate single inheritance.",
-  "26. Write a C++ program to demonstrate multilevel inheritance.",
-  "27. Write a C++ program to demonstrate multiple inheritance.",
-  "28. Write a C++ program to demonstrate hierarchical inheritance.",
-  "29. Write a C++ program to show constructor execution in inheritance.",
-  "30. Write a C++ program to demonstrate function overriding.",
-  "31. Write a C++ program to show effect of access specifiers in inheritance.",
-  "32. Write a C++ program to model Employee and Manager using inheritance.",
+    const questions = [
 
-  // 🔹 FUNCTION OVERLOADING
-  "33. Write a C++ program to add two numbers using function overloading.",
-  "34. Write a C++ program to calculate area of different shapes using overloading.",
-  "35. Write a C++ program to display different data types using function overloading.",
-  "36. Write a C++ program to swap values using function overloading.",
-  "37. Write a C++ program to find maximum using function overloading.",
-  "38. Write a C++ program with functions having different number of parameters.",
-  "39. Write a C++ program to demonstrate compile-time polymorphism.",
-  "40. Write a C++ program to implement a calculator using function overloading.",
+      // 🔹 ARRAYS
+      "1. Write a C++ program to find the maximum element in an array.",
+      "2. Write a C++ program to reverse an array.",
+      "3. Write a C++ program to count even and odd elements in an array.",
+      "4. Write a C++ program to find the sum and average of array elements.",
+      "5. Write a C++ program to search an element using linear search.",
+      "6. Write a C++ program to merge two arrays.",
+      "7. Write a C++ program to remove duplicate elements from an array.",
+      "8. Write a C++ program to find the second largest element in an array.",
 
-  // 🔹 TYPE CASTING
-  "41. Write a C++ program to demonstrate implicit type casting.",
-  "42. Write a C++ program to demonstrate explicit type casting.",
-  "43. Write a C++ program to convert float to integer.",
-  "44. Write a C++ program to convert character to ASCII value.",
-  "45. Write a C++ program to convert double to float.",
-  "46. Write a C++ program to demonstrate type casting in division.",
-  "47. Write a C++ program using static_cast.",
-  "48. Write a C++ program to demonstrate type safety using casting.",
+      // 🔹 POINTERS
+      "9. Write a C++ program to swap two numbers using pointers.",
+      "10. Write a C++ program to find sum of two numbers using pointers.",
+      "11. Write a C++ program to traverse an array using pointers.",
+      "12. Write a C++ program to find the largest element using pointers.",
+      "13. Write a C++ program to demonstrate pointer arithmetic.",
+      "14. Write a C++ program to allocate memory dynamically using new operator.",
+      "15. Write a C++ program to reverse an array using pointers.",
+      "16. Write a C++ program to compare two values using pointers.",
 
-  // 🔹 FUNCTION TEMPLATES
-  "49. Write a C++ program to create a generic function to add two numbers.",
-  "50. Write a C++ program to swap values using function template.",
-  "51. Write a C++ program to find maximum using function template.",
-  "52. Write a C++ program to find minimum using function template.",
-  "53. Write a C++ program to display array elements using templates.",
-  "54. Write a C++ program to implement a generic calculator using templates.",
-  "55. Write a C++ program to compare two values using template function.",
-  "56. Write a C++ program to demonstrate templates with multiple data types.",
+      // 🔹 ACCESS SPECIFIERS
+      "17. Write a C++ program to demonstrate public access specifier.",
+      "18. Write a C++ program to access private data using member functions.",
+      "19. Write a C++ program to demonstrate protected members.",
+      "20. Write a C++ program to show difference between public and private members.",
+      "21. Write a C++ program to implement encapsulation using private variables.",
+      "22. Write a C++ program with public, private and protected members.",
+      "23. Write a C++ program using getter and setter functions.",
+      "24. Write a C++ program to restrict direct access to data members.",
 
-  // 🔹 VECTORS
-  "57. Write a C++ program to create and display elements of a vector.",
-  "58. Write a C++ program to demonstrate push_back() and pop_back().",
-  "59. Write a C++ program to sort elements in a vector.",
-  "60. Write a C++ program to search an element in a vector.",
-  "61. Write a C++ program to reverse a vector.",
-  "62. Write a C++ program to remove an element from a vector.",
-  "63. Write a C++ program to find sum of vector elements.",
-  "64. Write a C++ program to create a vector of objects.",
+      // 🔹 INHERITANCE
+      "25. Write a C++ program to demonstrate single inheritance.",
+      "26. Write a C++ program to demonstrate multilevel inheritance.",
+      "27. Write a C++ program to demonstrate multiple inheritance.",
+      "28. Write a C++ program to demonstrate hierarchical inheritance.",
+      "29. Write a C++ program to show constructor execution in inheritance.",
+      "30. Write a C++ program to demonstrate function overriding.",
+      "31. Write a C++ program to show effect of access specifiers in inheritance.",
+      "32. Write a C++ program to model Employee and Manager using inheritance.",
 
-  // 🔹 FILE HANDLING
-  "65. Write a C++ program to write data into a file.",
-  "66. Write a C++ program to read data from a file.",
-  "67. Write a C++ program to append data to a file.",
-  "68. Write a C++ program to count number of words in a file.",
-  "69. Write a C++ program to copy contents from one file to another.",
-  "70. Write a C++ program to store student details in a file.",
-  "71. Write a C++ program to search for a word in a file.",
-  "72. Write a C++ program to read and write binary files."
+      // 🔹 FUNCTION OVERLOADING
+      "33. Write a C++ program to add two numbers using function overloading.",
+      "34. Write a C++ program to calculate area of different shapes using overloading.",
+      "35. Write a C++ program to display different data types using function overloading.",
+      "36. Write a C++ program to swap values using function overloading.",
+      "37. Write a C++ program to find maximum using function overloading.",
+      "38. Write a C++ program with functions having different number of parameters.",
+      "39. Write a C++ program to demonstrate compile-time polymorphism.",
+      "40. Write a C++ program to implement a calculator using function overloading.",
 
-];
+      // 🔹 TYPE CASTING
+      "41. Write a C++ program to demonstrate implicit type casting.",
+      "42. Write a C++ program to demonstrate explicit type casting.",
+      "43. Write a C++ program to convert float to integer.",
+      "44. Write a C++ program to convert character to ASCII value.",
+      "45. Write a C++ program to convert double to float.",
+      "46. Write a C++ program to demonstrate type casting in division.",
+      "47. Write a C++ program using static_cast.",
+      "48. Write a C++ program to demonstrate type safety using casting.",
 
-    
+      // 🔹 FUNCTION TEMPLATES
+      "49. Write a C++ program to create a generic function to add two numbers.",
+      "50. Write a C++ program to swap values using function template.",
+      "51. Write a C++ program to find maximum using function template.",
+      "52. Write a C++ program to find minimum using function template.",
+      "53. Write a C++ program to display array elements using templates.",
+      "54. Write a C++ program to implement a generic calculator using templates.",
+      "55. Write a C++ program to compare two values using template function.",
+      "56. Write a C++ program to demonstrate templates with multiple data types.",
+
+      // 🔹 VECTORS
+      "57. Write a C++ program to create and display elements of a vector.",
+      "58. Write a C++ program to demonstrate push_back() and pop_back().",
+      "59. Write a C++ program to sort elements in a vector.",
+      "60. Write a C++ program to search an element in a vector.",
+      "61. Write a C++ program to reverse a vector.",
+      "62. Write a C++ program to remove an element from a vector.",
+      "63. Write a C++ program to find sum of vector elements.",
+      "64. Write a C++ program to create a vector of objects.",
+
+      // 🔹 FILE HANDLING
+      "65. Write a C++ program to write data into a file.",
+      "66. Write a C++ program to read data from a file.",
+      "67. Write a C++ program to append data to a file.",
+      "68. Write a C++ program to count number of words in a file.",
+      "69. Write a C++ program to copy contents from one file to another.",
+      "70. Write a C++ program to store student details in a file.",
+      "71. Write a C++ program to search for a word in a file.",
+      "72. Write a C++ program to read and write binary files."
+
+    ];
+
+
     // assignment: if value is array -> pick one of those each login
     const questionAssignments = {
-    //   "S230542": [5, 15],    // choose ONE of these every login
-    //   "S231195": 16          // single question (works too)
-    //   // add more as needed
-    // };
+      //   "S230542": [5, 15],    // choose ONE of these every login
+      //   "S231195": 16          // single question (works too)
+      //   // add more as needed
+      // };
 
-    /***********************
-     * Helpers
-     ***********************/
-    function questionFromNumber(n) {
-      if (!Number.isInteger(n)) return null;
-      // Accept 1-based or 0-based
-      if (n >= 1 && n <= questions.length) return questions[n - 1];
-      if (n >= 0 && n < questions.length) return questions[n];
-      return null;
+      /***********************
+       * Helpers
+       ***********************/
+      function questionFromNumber(n) {
+        if (!Number.isInteger(n)) return null;
+    // Accept 1-based or 0-based
+    if (n >= 1 && n <= questions.length) return questions[n - 1];
+    if (n >= 0 && n < questions.length) return questions[n];
+    return null;
     }
 
     function getQuestionForUser(id) {
@@ -383,7 +598,7 @@
           const q = questionFromNumber(choice);
           if (q) return { q, indexChoice: choice };
           // fallback scan
-          for (let i=0;i<assigned.length;i++){
+          for (let i = 0; i < assigned.length; i++) {
             const alt = questionFromNumber(assigned[i]);
             if (alt) return { q: alt, indexChoice: assigned[i] };
           }
@@ -570,7 +785,7 @@
     }
 
     // On load: restore session if present
-    window.onload = function() {
+    window.onload = function () {
       // restore if already logged in
       const storedId = sessionStorage.getItem('studentId');
       const storedQuestion = sessionStorage.getItem('question');
@@ -599,10 +814,10 @@
       }
 
       // accessibility and modal click outside handler
-      document.addEventListener('keydown', function(e){
+      document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape') closeModal();
       });
-      document.getElementById('questionModal').addEventListener('click', function(e){
+      document.getElementById('questionModal').addEventListener('click', function (e) {
         if (e.target === this) closeModal();
       });
     };
@@ -620,15 +835,5 @@
   </script>
 
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
