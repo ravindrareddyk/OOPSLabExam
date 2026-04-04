@@ -692,195 +692,112 @@
       "O230390": "4502",
       "O230580": "9806",
       "R230185": "7895",
-      // "O230003": "8313",
-      // "O230701": "4933",
-      // "R230017": "6788",
-      // "R230059": "9742",
-      // "R230105": "5644",
-      // "R230175": "5348",
-      // "R230187": "5815",
-      // "R230251": "5574",
-      // "R230267": "6828",
-      // "R230283": "4317",
-      // "R230300": "4065",
-      // "R230389": "7517",
-      // "R230436": "9874",
-      // "R230488": "8287",
-      // "R230548": "5458",
-      // "R230553": "3359",
-      // "R230646": "6928",
-      // "R230648": "8746",
-      // "R230660": "5910",
-      // "R230719": "8453",
-      // "R230860": "4377",
-      // "S230641": "8287",
-      // "S230685": "4110",
-      // "R220153": "9338",
+      "O230003": "8313",
+      "O230701": "4933",
+      "R230017": "6788",
+      "R230059": "9742",
+      "R230105": "5644",
+      "R230175": "5348",
+      "R230187": "5815",
+      "R230251": "5574",
+      "R230267": "6828",
+      "R230283": "4317",
+      "R230300": "4065",
+      "R230389": "7517",
+      "R230436": "9874",
+      "R230488": "8287",
+      "R230548": "5458",
+      "R230553": "3359",
+      "R230646": "6928",
+      "R230648": "8746",
+      "R230660": "5910",
+      "R230719": "8453",
+      "R230860": "4377",
+      "S230641": "8287",
+      "S230685": "4110",
+      "R220153": "9338",
       "R23test": "1234"
 
     };
 
-    const questions = [
-
-      "1. Load the Food Delivery dataset using Pandas. Display the first 5 records of the dataset. Count the total number of orders. Display all orders where the order value is greater than ₹200. Calculate the average delivery time. Find the total revenue generated. Draw a bar chart showing restaurant type versus number of orders. Plot a scatter plot showing the relationship between distance and delivery time.",
-
-      "2. Load the Food Delivery dataset using Pandas. Display the last 5 records of the dataset. Count the number of Veg orders. Display all orders placed on weekends. Find the maximum order value. Calculate the average rating. Draw a pie chart showing payment mode distribution. Plot a line graph of order time versus number of orders.",
-
-      "3. Load the Food Delivery dataset using Pandas. Display dataset information using info(). Find the minimum delivery time. Display all orders where distance is greater than 5 km. Group the dataset by Restaurant_Type and calculate average rating. Count the number of orders per day. Draw a bar chart of day versus order count. Plot a scatter plot between rating and order value.",
-
-      "4. Load the Food Delivery dataset using Pandas. Display column names. Count the number of weekend orders. Display all orders where rating is less than 4.0. Calculate average distance. Group the dataset by Payment_Mode and calculate total revenue. Draw a pie chart showing restaurant type distribution. Plot a line graph of delivery time versus order ID.",
-
-      "5. Load the Food Delivery dataset using Pandas. Display summary statistics using describe(). Find the maximum delivery partner rating. Display all orders where delivery time is greater than 30 minutes. Count the number of orders by restaurant type. Calculate average order value per day. Draw a bar chart showing restaurant type versus average rating. Plot a scatter plot between distance and rating.",
-
-      "6. Load the Food Delivery dataset using Pandas. Display dataset shape. Count the number of Cash payments. Display all orders where order value is less than ₹150. Calculate the average order value. Compare total revenue for weekday and weekend. Draw a pie chart showing day distribution. Plot a line graph of order value versus order time.",
-
-      "7. Load the Food Delivery dataset using Pandas. Display the first 10 records. Count the number of Non-Veg orders. Display all orders where distance is less than 3 km. Find the maximum rating. Calculate average delivery time for each restaurant type. Draw a bar chart showing payment mode versus count. Plot a scatter plot between order value and delivery time.",
-
-      "8. Load the Food Delivery dataset using Pandas. Display the last 10 records. Count the number of UPI payments. Display all orders where rating is greater than 4.5. Find the minimum order value. Calculate total revenue by restaurant type. Draw a pie chart showing payment mode distribution. Plot a line graph of orders per day.",
-
-      "9. Load the Food Delivery dataset using Pandas. Display unique restaurant types. Count the number of weekend orders. Display all orders where distance is greater than 6 km. Calculate average delivery partner rating. Group the dataset by Payment_Mode and count orders. Draw a bar chart showing day versus revenue. Plot a scatter plot between rating and delivery time.",
-
-      "10. Load the Food Delivery dataset using Pandas. Check for missing values in the dataset. Count the number of weekday orders. Display all orders where order value is greater than ₹300. Calculate the average delivery time. Group the dataset by Day and calculate average order value. Draw a pie chart showing restaurant type distribution. Plot a line graph between order time and distance.",
-
-      "11. Load the Food Delivery dataset using Pandas. Display the first 10 records. Count the number of UPI payments. Display orders where rating is greater than 4.0. Find the maximum delivery time. Group the dataset by Restaurant_Type and calculate average rating. Draw a bar chart for payment mode versus orders. Plot a scatter plot between order value and delivery time.",
-
-      "12. Load the Food Delivery dataset using Pandas. Display the last 10 records. Count the number of weekend orders. Display orders where distance is less than 3 km. Find the minimum order value. Group the dataset by Payment_Mode and calculate total revenue. Draw a pie chart for payment modes. Plot a line graph of delivery time versus order ID.",
-
-      "13. Load the Food Delivery dataset using Pandas. Display column names. Count the number of Non-Veg orders. Display orders where delivery time is greater than 35 minutes. Calculate average distance. Group the dataset by Day and count orders. Draw a bar chart showing day versus orders. Plot a scatter plot between rating and order value.",
-
-      "14. Load the Food Delivery dataset using Pandas. Display summary statistics using describe(). Count the number of Cash payments. Display orders where rating is less than 4.0. Calculate average order value. Group the dataset by Restaurant_Type and calculate total revenue. Draw a pie chart showing restaurant type distribution. Plot a line graph of order time versus delivery time.",
-
-      "15. Load the Food Delivery dataset using Pandas. Display dataset shape. Count the number of orders above ₹250. Display all weekend orders. Find the maximum rating. Group the dataset by Payment_Mode and calculate average order value. Draw a bar chart showing payment mode versus value. Plot a scatter plot between distance and rating.",
-
-      "16. Load the Food Delivery dataset using Pandas. Display the first 8 records. Count the number of Card payments. Display orders where distance is greater than 6 km. Calculate average order value. Group the dataset by Day and calculate total revenue. Draw a bar chart showing day versus revenue. Plot a scatter plot between distance and delivery time.",
-
-      "17. Load the Food Delivery dataset using Pandas. Display the last 8 records. Count the number of Veg orders. Display orders where delivery time is less than 25 minutes. Find the maximum order value. Group the dataset by Restaurant_Type and calculate average delivery time. Draw a pie chart showing restaurant type distribution. Plot a line graph of order time versus order value.",
-
-      "18. Load the Food Delivery dataset using Pandas. Display dataset information using info(). Count the number of weekend orders. Display orders where rating is greater than 4.5. Find the minimum delivery time. Group the dataset by Payment_Mode and count orders. Draw a bar chart showing payment mode versus orders. Plot a scatter plot between rating and delivery time.",
-
-      "19. Load the Food Delivery dataset using Pandas. Display column names. Count the number of Non-Veg orders. Display orders where order value is less than ₹200. Calculate average rating. Group the dataset by Day and calculate average delivery time. Draw a line graph showing day versus delivery time. Plot a scatter plot between order value and rating.",
-
-      "20. Load the Food Delivery dataset using Pandas. Display the first 5 records. Count the number of UPI payments. Display orders where distance is less than 4 km. Find the maximum delivery time. Group the dataset by Restaurant_Type and count total orders. Draw a bar chart showing restaurant type versus order count. Plot a line graph of order time versus delivery time.",
-
-      "21. Load the Food Delivery dataset using Pandas. Display the last 5 records. Count weekday orders. Display orders where rating is below 4.0. Calculate average distance. Group by Payment_Mode and calculate average rating. Draw a pie chart for payment mode distribution. Plot a scatter plot between distance and order value.",
-
-      "22. Load the Food Delivery dataset using Pandas. Display dataset shape. Count Fast Food orders. Display orders where delivery time is greater than 40 minutes. Find minimum order value. Group by Day and count orders. Draw a bar chart day vs orders. Plot a line graph of order time vs rating.",
-
-      "23. Load the Food Delivery dataset using Pandas. Display summary statistics using describe(). Count Cash payments. Display orders where distance is greater than 5 km. Calculate average delivery partner rating. Group by Restaurant_Type and calculate average value. Draw a pie chart for type distribution. Plot scatter between delivery time and rating.",
-
-      "24. Load the Food Delivery dataset using Pandas. Display first 7 records. Count weekend orders. Display orders where order value is greater than ₹350. Find maximum rating. Group by Payment_Mode and calculate revenue. Draw bar chart payment vs revenue. Plot line graph order time vs distance.",
-
-      "25. Load the Food Delivery dataset using Pandas. Display last 7 records. Count Veg orders. Display orders where rating is greater than 4.2. Calculate average delivery time. Group by Day and calculate average value. Draw line graph day vs value. Plot scatter distance vs rating.",
-
-      "26. Load the Food Delivery dataset using Pandas. Display column names. Count Non-Veg orders. Display orders where delivery time is less than 20 minutes. Find maximum order value. Group by Restaurant_Type and calculate total revenue. Draw bar chart type vs revenue. Plot scatter value vs delivery time.",
-
-      "27. Load the Food Delivery dataset using Pandas. Display dataset information using info(). Count UPI payments. Display orders where distance is less than 2 km. Calculate average rating. Group by Payment_Mode and count orders. Draw pie chart payment usage. Plot line graph order time vs value.",
-
-      "28. Load the Food Delivery dataset using Pandas. Display first 6 records. Count weekday orders. Display orders where rating is greater than 4.7. Find minimum delivery time. Group by Day and calculate revenue. Draw bar chart day vs revenue. Plot scatter rating vs distance.",
-
-      "29. Load the Food Delivery dataset using Pandas. Display last 6 records. Count Fast Food orders. Display orders where order value is less than ₹180. Calculate average distance. Group by Restaurant_Type and calculate average rating. Draw pie chart type distribution. Plot line graph order time vs delivery time.",
-
-      "30. Load the Food Delivery dataset using Pandas. Display dataset shape. Count number of Card payments. Display orders where delivery time is greater than 50 minutes. Find maximum rating. Group data by Payment_Mode and calculate total orders. Draw a bar chart showing payment mode vs count. Plot a scatter plot between delivery time and order value.",
-
-      "31. Load the Food Delivery dataset using Pandas. Display first 5 records. Count weekend orders. Display orders where order value is greater than ₹280. Calculate average rating. Group by Day and count orders. Draw bar chart day vs orders. Plot scatter value vs distance.",
-
-      "32. Load the Food Delivery dataset using Pandas. Display last 5 records. Count UPI payments. Display orders where distance is greater than 7 km. Calculate average order value. Group by Restaurant_Type and calculate revenue. Draw pie chart type distribution. Plot line graph order time vs rating.",
-
-      "33. Load the Food Delivery dataset using Pandas. Display column names. Count Veg orders. Display orders where rating is less than 3.8. Find minimum order value. Group by Payment_Mode and calculate average value. Draw bar chart payment vs value. Plot scatter rating vs distance.",
-
-      "34. Load the Food Delivery dataset using Pandas. Display dataset information using info(). Count weekday orders. Display orders where delivery time is greater than 40 minutes. Calculate average distance. Group by Day and calculate revenue. Draw pie chart day distribution. Plot line graph order time vs value.",
-
-      "35. Load the Food Delivery dataset using Pandas. Display summary using describe(). Count Non-Veg orders. Display orders where order value is greater than ₹320. Find maximum delivery time. Group by Restaurant_Type and calculate average rating. Draw bar chart type vs rating. Plot scatter delivery time vs distance.",
-
-      "36. Load the Food Delivery dataset using Pandas. Display first 10 records. Count Cash payments. Display orders where distance is less than 3 km. Calculate average delivery time. Group by Payment_Mode and calculate revenue. Draw bar chart payment vs revenue. Plot line graph order time vs delivery time.",
-
-      "37. Load the Food Delivery dataset using Pandas. Display last 10 records. Count Card payments. Display orders where order value is less than ₹180. Calculate average rating. Group by Restaurant_Type and count orders. Draw bar chart type vs orders. Plot scatter value vs rating.",
-
-      "38. Load the Food Delivery dataset using Pandas. Display first 6 records. Count weekday orders. Display orders where delivery time is less than 20 minutes. Find maximum order value. Group by Day and calculate average delivery time. Draw line graph day vs delivery time. Plot scatter distance vs delivery time.",
-
-      "39. Load the Food Delivery dataset using Pandas. Display dataset shape. Count UPI payments. Display orders where distance is greater than 8 km. Calculate average order value. Group by Payment_Mode and calculate revenue. Draw bar chart payment vs revenue. Plot line graph order time vs distance.",
-
-      "40. Load the Food Delivery dataset using Pandas. Display column names. Count Fast Food orders. Display orders where rating is greater than 4.6. Find minimum delivery time. Group by Restaurant_Type and calculate average order value. Draw pie chart type distribution. Plot scatter rating vs delivery time."
-
-    ];
 
     // for boys sec-b
 
-    // const questions = [
+    const questions = [
 
-    //   "41. Load the Food Delivery dataset using Pandas. Display the first 5 records. Count the number of Cash payment orders. Display all orders where the delivery time is greater than 45 minutes. Calculate the average distance. Group the dataset by Day and calculate total revenue. Draw a bar chart showing day versus revenue. Plot a line graph showing the relationship between order time and order value.",
+      "41. Load the Food Delivery dataset using Pandas. Display the first 5 records. Count the number of Cash payment orders. Display all orders where the delivery time is greater than 45 minutes. Calculate the average distance. Group the dataset by Day and calculate total revenue. Draw a bar chart showing day versus revenue. Plot a line graph showing the relationship between order time and order value.",
 
-    //   "42. Load the Food Delivery dataset using Pandas. Display the last 5 records. Count the number of Non-Veg orders. Display all orders where the order value is greater than ₹350. Find the maximum rating. Group the dataset by Payment_Mode and calculate average rating. Draw a pie chart showing payment mode distribution. Plot a scatter plot showing the relationship between distance and rating.",
+      "42. Load the Food Delivery dataset using Pandas. Display the last 5 records. Count the number of Non-Veg orders. Display all orders where the order value is greater than ₹350. Find the maximum rating. Group the dataset by Payment_Mode and calculate average rating. Draw a pie chart showing payment mode distribution. Plot a scatter plot showing the relationship between distance and rating.",
 
-    //   "43. Load the Food Delivery dataset using Pandas. Display dataset information using info(). Count the number of weekday orders. Display all orders where the distance is less than 2 km. Calculate the average delivery time. Group the dataset by Restaurant_Type and calculate total revenue. Draw a bar chart showing restaurant type versus revenue. Plot a line graph showing the relationship between order time and delivery time.",
+      "43. Load the Food Delivery dataset using Pandas. Display dataset information using info(). Count the number of weekday orders. Display all orders where the distance is less than 2 km. Calculate the average delivery time. Group the dataset by Restaurant_Type and calculate total revenue. Draw a bar chart showing restaurant type versus revenue. Plot a line graph showing the relationship between order time and delivery time.",
 
-    //   "44. Load the Food Delivery dataset using Pandas. Display the first 8 records. Count the number of Card payments. Display all orders where the rating is less than 3.5. Find the minimum order value. Group the dataset by Day and calculate average order value. Draw a line graph showing day versus average order value. Plot a scatter plot showing the relationship between order value and distance.",
+      "44. Load the Food Delivery dataset using Pandas. Display the first 8 records. Count the number of Card payments. Display all orders where the rating is less than 3.5. Find the minimum order value. Group the dataset by Day and calculate average order value. Draw a line graph showing day versus average order value. Plot a scatter plot showing the relationship between order value and distance.",
 
-    //   "45. Load the Food Delivery dataset using Pandas. Display the last 8 records. Count the number of UPI payments. Display all orders where the delivery time is less than 18 minutes. Calculate the average rating. Group the dataset by Payment_Mode and calculate total number of orders. Draw a bar chart showing payment mode versus order count. Plot a scatter plot showing the relationship between rating and order value.",
+      "45. Load the Food Delivery dataset using Pandas. Display the last 8 records. Count the number of UPI payments. Display all orders where the delivery time is less than 18 minutes. Calculate the average rating. Group the dataset by Payment_Mode and calculate total number of orders. Draw a bar chart showing payment mode versus order count. Plot a scatter plot showing the relationship between rating and order value.",
 
-    //   "46. Load the Food Delivery dataset using Pandas. Display dataset shape. Count the number of Veg orders. Display all orders where the distance is greater than 9 km. Find the maximum delivery time. Group the dataset by Restaurant_Type and calculate average delivery time. Draw a bar chart showing restaurant type versus delivery time. Plot a line graph showing the relationship between order time and rating.",
+      "46. Load the Food Delivery dataset using Pandas. Display dataset shape. Count the number of Veg orders. Display all orders where the distance is greater than 9 km. Find the maximum delivery time. Group the dataset by Restaurant_Type and calculate average delivery time. Draw a bar chart showing restaurant type versus delivery time. Plot a line graph showing the relationship between order time and rating.",
 
-    //   "47. Load the Food Delivery dataset using Pandas. Display column names. Count the number of Fast Food orders. Display all orders where the order value is less than ₹150. Calculate the average distance. Group the dataset by Day and calculate total number of orders. Draw a bar chart showing day versus orders. Plot a scatter plot showing the relationship between distance and order value.",
+      "47. Load the Food Delivery dataset using Pandas. Display column names. Count the number of Fast Food orders. Display all orders where the order value is less than ₹150. Calculate the average distance. Group the dataset by Day and calculate total number of orders. Draw a bar chart showing day versus orders. Plot a scatter plot showing the relationship between distance and order value.",
 
-    //   "48. Load the Food Delivery dataset using Pandas. Display the first 9 records. Count the number of weekend orders. Display all orders where the rating is greater than 4.8. Find the minimum delivery time. Group the dataset by Payment_Mode and calculate total revenue. Draw a pie chart showing payment mode distribution. Plot a line graph showing the relationship between order time and delivery time.",
+      "48. Load the Food Delivery dataset using Pandas. Display the first 9 records. Count the number of weekend orders. Display all orders where the rating is greater than 4.8. Find the minimum delivery time. Group the dataset by Payment_Mode and calculate total revenue. Draw a pie chart showing payment mode distribution. Plot a line graph showing the relationship between order time and delivery time.",
 
-    //   "49. Load the Food Delivery dataset using Pandas. Display the last 9 records. Count the number of Cash payments. Display all orders where the distance is less than 1 km. Calculate the average order value. Group the dataset by Restaurant_Type and calculate total revenue. Draw a bar chart showing restaurant type versus revenue. Plot a scatter plot showing the relationship between delivery time and rating.",
+      "49. Load the Food Delivery dataset using Pandas. Display the last 9 records. Count the number of Cash payments. Display all orders where the distance is less than 1 km. Calculate the average order value. Group the dataset by Restaurant_Type and calculate total revenue. Draw a bar chart showing restaurant type versus revenue. Plot a scatter plot showing the relationship between delivery time and rating.",
 
-    //   "50. Load the Food Delivery dataset using Pandas. Display summary statistics using describe(). Count the number of Card payments. Display all orders where the delivery time is greater than 55 minutes. Find the maximum rating. Group the dataset by Day and calculate average delivery time. Draw a line graph showing day versus delivery time. Plot a scatter plot showing the relationship between delivery time and order value.",
+      "50. Load the Food Delivery dataset using Pandas. Display summary statistics using describe(). Count the number of Card payments. Display all orders where the delivery time is greater than 55 minutes. Find the maximum rating. Group the dataset by Day and calculate average delivery time. Draw a line graph showing day versus delivery time. Plot a scatter plot showing the relationship between delivery time and order value.",
 
-    //   "51. Load the Food Delivery dataset using Pandas. Display the first 5 records. Count the number of orders where delivery time is less than 25 minutes. Display all orders where the order value is greater than ₹300. Calculate the average rating. Group the dataset by Restaurant_Type and calculate total revenue. Draw a bar chart showing restaurant type versus revenue. Plot a scatter plot showing the relationship between distance and order value.",
+      "51. Load the Food Delivery dataset using Pandas. Display the first 5 records. Count the number of orders where delivery time is less than 25 minutes. Display all orders where the order value is greater than ₹300. Calculate the average rating. Group the dataset by Restaurant_Type and calculate total revenue. Draw a bar chart showing restaurant type versus revenue. Plot a scatter plot showing the relationship between distance and order value.",
 
-    //   "52. Load the Food Delivery dataset using Pandas. Display the last 5 records. Count the number of UPI payments. Display all orders where the distance is greater than 6 km. Find the minimum delivery time. Group the dataset by Payment_Mode and calculate average rating. Draw a pie chart showing payment mode distribution. Plot a line graph showing the relationship between order time and delivery time.",
+      "52. Load the Food Delivery dataset using Pandas. Display the last 5 records. Count the number of UPI payments. Display all orders where the distance is greater than 6 km. Find the minimum delivery time. Group the dataset by Payment_Mode and calculate average rating. Draw a pie chart showing payment mode distribution. Plot a line graph showing the relationship between order time and delivery time.",
 
-    //   "53. Load the Food Delivery dataset using Pandas. Display dataset shape. Count the number of weekday orders. Display all orders where the rating is greater than 4.3. Calculate the average order value. Group the dataset by Day and calculate total number of orders. Draw a bar chart showing day versus order count. Plot a scatter plot showing the relationship between rating and distance.",
+      "53. Load the Food Delivery dataset using Pandas. Display dataset shape. Count the number of weekday orders. Display all orders where the rating is greater than 4.3. Calculate the average order value. Group the dataset by Day and calculate total number of orders. Draw a bar chart showing day versus order count. Plot a scatter plot showing the relationship between rating and distance.",
 
-    //   "54. Load the Food Delivery dataset using Pandas. Display column names. Count the number of Non-Veg orders. Display all orders where the delivery time is greater than 48 minutes. Find the maximum order value. Group the dataset by Restaurant_Type and calculate average rating. Draw a bar chart showing restaurant type versus average rating. Plot a line graph showing the relationship between order time and order value.",
+      "54. Load the Food Delivery dataset using Pandas. Display column names. Count the number of Non-Veg orders. Display all orders where the delivery time is greater than 48 minutes. Find the maximum order value. Group the dataset by Restaurant_Type and calculate average rating. Draw a bar chart showing restaurant type versus average rating. Plot a line graph showing the relationship between order time and order value.",
 
-    //   "55. Load the Food Delivery dataset using Pandas. Display the first 6 records. Count the number of Cash payments. Display all orders where the distance is less than 2 km. Calculate the average delivery time. Group the dataset by Payment_Mode and calculate total revenue. Draw a pie chart showing payment mode distribution. Plot a scatter plot showing the relationship between delivery time and rating.",
+      "55. Load the Food Delivery dataset using Pandas. Display the first 6 records. Count the number of Cash payments. Display all orders where the distance is less than 2 km. Calculate the average delivery time. Group the dataset by Payment_Mode and calculate total revenue. Draw a pie chart showing payment mode distribution. Plot a scatter plot showing the relationship between delivery time and rating.",
 
-    //   "56. Load the Food Delivery dataset using Pandas. Display the last 6 records. Count the number of Fast Food orders. Display all orders where the order value is less than ₹200. Find the minimum rating. Group the dataset by Day and calculate average delivery time. Draw a line graph showing day versus delivery time. Plot a scatter plot showing the relationship between order value and distance.",
+      "56. Load the Food Delivery dataset using Pandas. Display the last 6 records. Count the number of Fast Food orders. Display all orders where the order value is less than ₹200. Find the minimum rating. Group the dataset by Day and calculate average delivery time. Draw a line graph showing day versus delivery time. Plot a scatter plot showing the relationship between order value and distance.",
 
-    //   "57. Load the Food Delivery dataset using Pandas. Display dataset information using info(). Count the number of weekend orders. Display all orders where the rating is less than 4.0. Calculate the average distance. Group the dataset by Restaurant_Type and calculate total number of orders. Draw a bar chart showing restaurant type versus number of orders. Plot a line graph showing the relationship between order time and rating.",
+      "57. Load the Food Delivery dataset using Pandas. Display dataset information using info(). Count the number of weekend orders. Display all orders where the rating is less than 4.0. Calculate the average distance. Group the dataset by Restaurant_Type and calculate total number of orders. Draw a bar chart showing restaurant type versus number of orders. Plot a line graph showing the relationship between order time and rating.",
 
-    //   "58. Load the Food Delivery dataset using Pandas. Display the first 7 records. Count the number of Card payments. Display all orders where the delivery time is less than 15 minutes. Find the maximum rating. Group the dataset by Payment_Mode and calculate total number of orders. Draw a bar chart showing payment mode versus order count. Plot a scatter plot showing the relationship between distance and delivery time.",
+      "58. Load the Food Delivery dataset using Pandas. Display the first 7 records. Count the number of Card payments. Display all orders where the delivery time is less than 15 minutes. Find the maximum rating. Group the dataset by Payment_Mode and calculate total number of orders. Draw a bar chart showing payment mode versus order count. Plot a scatter plot showing the relationship between distance and delivery time.",
 
-    //   "59. Load the Food Delivery dataset using Pandas. Display the last 7 records. Count the number of Veg orders. Display all orders where the distance is greater than 10 km. Calculate the average order value. Group the dataset by Day and calculate total revenue. Draw a bar chart showing day versus revenue. Plot a line graph showing the relationship between order time and distance.",
+      "59. Load the Food Delivery dataset using Pandas. Display the last 7 records. Count the number of Veg orders. Display all orders where the distance is greater than 10 km. Calculate the average order value. Group the dataset by Day and calculate total revenue. Draw a bar chart showing day versus revenue. Plot a line graph showing the relationship between order time and distance.",
 
-    //   "60. Load the Food Delivery dataset using Pandas. Display summary statistics using describe(). Count the number of UPI payments. Display all orders where the order value is greater than ₹400. Find the maximum delivery time. Group the dataset by Restaurant_Type and calculate average delivery time. Draw a bar chart showing restaurant type versus delivery time. Plot a scatter plot showing the relationship between delivery time and rating.",
+      "60. Load the Food Delivery dataset using Pandas. Display summary statistics using describe(). Count the number of UPI payments. Display all orders where the order value is greater than ₹400. Find the maximum delivery time. Group the dataset by Restaurant_Type and calculate average delivery time. Draw a bar chart showing restaurant type versus delivery time. Plot a scatter plot showing the relationship between delivery time and rating.",
 
-    //   "61. Load the Food Delivery dataset using Pandas. Display the first 5 records. Count the number of orders where order value is below average. Display all orders where the rating is greater than 4.5. Calculate the average delivery time. Group the dataset by Payment_Mode and calculate total revenue. Draw a pie chart showing payment mode distribution. Plot a line graph showing the relationship between order time and order value.",
+      "61. Load the Food Delivery dataset using Pandas. Display the first 5 records. Count the number of orders where order value is below average. Display all orders where the rating is greater than 4.5. Calculate the average delivery time. Group the dataset by Payment_Mode and calculate total revenue. Draw a pie chart showing payment mode distribution. Plot a line graph showing the relationship between order time and order value.",
 
-    //   "62. Load the Food Delivery dataset using Pandas. Display the last 5 records. Count the number of orders where delivery time is above average. Display all orders where the distance is less than 5 km. Calculate the average rating. Group the dataset by Day and calculate total number of orders. Draw a bar chart showing day versus order count. Plot a scatter plot showing the relationship between distance and rating.",
+      "62. Load the Food Delivery dataset using Pandas. Display the last 5 records. Count the number of orders where delivery time is above average. Display all orders where the distance is less than 5 km. Calculate the average rating. Group the dataset by Day and calculate total number of orders. Draw a bar chart showing day versus order count. Plot a scatter plot showing the relationship between distance and rating.",
 
-    //   "63. Load the Food Delivery dataset using Pandas. Display dataset shape. Count the number of Cash payments. Display all orders where the rating is less than 3.9. Find the minimum order value. Group the dataset by Restaurant_Type and calculate total revenue. Draw a bar chart showing restaurant type versus revenue. Plot a line graph showing the relationship between order time and delivery time.",
+      "63. Load the Food Delivery dataset using Pandas. Display dataset shape. Count the number of Cash payments. Display all orders where the rating is less than 3.9. Find the minimum order value. Group the dataset by Restaurant_Type and calculate total revenue. Draw a bar chart showing restaurant type versus revenue. Plot a line graph showing the relationship between order time and delivery time.",
 
-    //   "64. Load the Food Delivery dataset using Pandas. Display column names. Count the number of Non-Veg orders. Display all orders where the delivery time is greater than 60 minutes. Find the maximum rating. Group the dataset by Payment_Mode and calculate average order value. Draw a bar chart showing payment mode versus average order value. Plot a scatter plot showing the relationship between order value and distance.",
+      "64. Load the Food Delivery dataset using Pandas. Display column names. Count the number of Non-Veg orders. Display all orders where the delivery time is greater than 60 minutes. Find the maximum rating. Group the dataset by Payment_Mode and calculate average order value. Draw a bar chart showing payment mode versus average order value. Plot a scatter plot showing the relationship between order value and distance.",
 
-    //   "65. Load the Food Delivery dataset using Pandas. Display the first 8 records. Count the number of weekday orders. Display all orders where the distance is greater than 5 km. Calculate the average delivery time. Group the dataset by Day and calculate average order value. Draw a line graph showing day versus average order value. Plot a scatter plot showing the relationship between delivery time and rating.",
+      "65. Load the Food Delivery dataset using Pandas. Display the first 8 records. Count the number of weekday orders. Display all orders where the distance is greater than 5 km. Calculate the average delivery time. Group the dataset by Day and calculate average order value. Draw a line graph showing day versus average order value. Plot a scatter plot showing the relationship between delivery time and rating.",
 
-    //   "66. Load the Food Delivery dataset using Pandas. Display the last 8 records. Count the number of Fast Food orders. Display all orders where the order value is less than ₹170. Find the minimum delivery time. Group the dataset by Restaurant_Type and calculate average rating. Draw a pie chart showing restaurant type distribution. Plot a line graph showing the relationship between order time and distance.",
+      "66. Load the Food Delivery dataset using Pandas. Display the last 8 records. Count the number of Fast Food orders. Display all orders where the order value is less than ₹170. Find the minimum delivery time. Group the dataset by Restaurant_Type and calculate average rating. Draw a pie chart showing restaurant type distribution. Plot a line graph showing the relationship between order time and distance.",
 
-    //   "67. Load the Food Delivery dataset using Pandas. Display dataset information using info(). Count the number of UPI payments. Display all orders where the rating is greater than 4.9. Calculate the average order value. Group the dataset by Payment_Mode and calculate total number of orders. Draw a bar chart showing payment mode versus order count. Plot a scatter plot showing the relationship between delivery time and distance.",
+      "67. Load the Food Delivery dataset using Pandas. Display dataset information using info(). Count the number of UPI payments. Display all orders where the rating is greater than 4.9. Calculate the average order value. Group the dataset by Payment_Mode and calculate total number of orders. Draw a bar chart showing payment mode versus order count. Plot a scatter plot showing the relationship between delivery time and distance.",
 
-    //   "68. Load the Food Delivery dataset using Pandas. Display the first 9 records. Count the number of Veg orders. Display all orders where the delivery time is less than 22 minutes. Find the maximum order value. Group the dataset by Day and calculate total revenue. Draw a bar chart showing day versus revenue. Plot a line graph showing the relationship between order time and rating.",
+      "68. Load the Food Delivery dataset using Pandas. Display the first 9 records. Count the number of Veg orders. Display all orders where the delivery time is less than 22 minutes. Find the maximum order value. Group the dataset by Day and calculate total revenue. Draw a bar chart showing day versus revenue. Plot a line graph showing the relationship between order time and rating.",
 
-    //   "69. Load the Food Delivery dataset using Pandas. Display the last 9 records. Count the number of Card payments. Display all orders where the distance is greater than 12 km. Calculate the average rating. Group the dataset by Restaurant_Type and calculate total number of orders. Draw a bar chart showing restaurant type versus order count. Plot a scatter plot showing the relationship between order value and rating.",
+      "69. Load the Food Delivery dataset using Pandas. Display the last 9 records. Count the number of Card payments. Display all orders where the distance is greater than 12 km. Calculate the average rating. Group the dataset by Restaurant_Type and calculate total number of orders. Draw a bar chart showing restaurant type versus order count. Plot a scatter plot showing the relationship between order value and rating.",
 
-    //   "70. Load the Food Delivery dataset using Pandas. Display summary statistics using describe(). Count the number of Cash payments. Display all orders where the order value is greater than ₹450. Find the maximum delivery time. Group the dataset by Payment_Mode and calculate total revenue. Draw a pie chart showing payment mode distribution. Plot a line graph showing the relationship between order time and delivery time.",
+      "70. Load the Food Delivery dataset using Pandas. Display summary statistics using describe(). Count the number of Cash payments. Display all orders where the order value is greater than ₹450. Find the maximum delivery time. Group the dataset by Payment_Mode and calculate total revenue. Draw a pie chart showing payment mode distribution. Plot a line graph showing the relationship between order time and delivery time.",
 
-    //   "71. Load the Food Delivery dataset using Pandas. Display the first 5 records. Count the number of orders made using each payment mode. Display all orders where the delivery time is less than 30 minutes. Calculate the average order value. Group the dataset by Day and calculate average delivery time. Draw a bar chart showing day versus delivery time. Plot a scatter plot showing the relationship between distance and rating.",
+      "71. Load the Food Delivery dataset using Pandas. Display the first 5 records. Count the number of orders made using each payment mode. Display all orders where the delivery time is less than 30 minutes. Calculate the average order value. Group the dataset by Day and calculate average delivery time. Draw a bar chart showing day versus delivery time. Plot a scatter plot showing the relationship between distance and rating.",
 
-    //   "72. Load the Food Delivery dataset using Pandas. Display the last 5 records. Count the number of orders placed on each day. Display all orders where the rating is greater than 4.2. Calculate the average delivery time. Group the dataset by Restaurant_Type and calculate total revenue. Draw a bar chart showing restaurant type versus revenue. Plot a line graph showing the relationship between order time and order value.",
+      "72. Load the Food Delivery dataset using Pandas. Display the last 5 records. Count the number of orders placed on each day. Display all orders where the rating is greater than 4.2. Calculate the average delivery time. Group the dataset by Restaurant_Type and calculate total revenue. Draw a bar chart showing restaurant type versus revenue. Plot a line graph showing the relationship between order time and order value.",
 
-    //   "73. Load the Food Delivery dataset using Pandas. Display dataset shape. Count the number of Veg orders. Display all orders where the distance is less than 3 km. Calculate the average rating. Group the dataset by Payment_Mode and calculate average rating. Draw a pie chart showing payment mode distribution. Plot a scatter plot showing the relationship between rating and delivery partner rating.",
+      "73. Load the Food Delivery dataset using Pandas. Display dataset shape. Count the number of Veg orders. Display all orders where the distance is less than 3 km. Calculate the average rating. Group the dataset by Payment_Mode and calculate average rating. Draw a pie chart showing payment mode distribution. Plot a scatter plot showing the relationship between rating and delivery partner rating.",
 
-    //   "74. Load the Food Delivery dataset using Pandas. Display column names. Count the number of Non-Veg orders. Display all orders where the delivery time is greater than 35 minutes. Calculate the average order value. Group the dataset by Restaurant_Type and calculate total revenue. Draw a bar chart showing restaurant type versus revenue. Plot a scatter plot showing the relationship between distance and order value.",
+      "74. Load the Food Delivery dataset using Pandas. Display column names. Count the number of Non-Veg orders. Display all orders where the delivery time is greater than 35 minutes. Calculate the average order value. Group the dataset by Restaurant_Type and calculate total revenue. Draw a bar chart showing restaurant type versus revenue. Plot a scatter plot showing the relationship between distance and order value.",
 
-    //   "75. Load the Food Delivery dataset using Pandas. Display the first 6 records. Count the number of weekend orders. Display all orders where the rating is less than 4.0. Find the minimum delivery time. Group the dataset by Day and calculate total number of orders. Draw a bar chart showing day versus order count. Plot a line graph showing the relationship between order time and distance.",
+      "75. Load the Food Delivery dataset using Pandas. Display the first 6 records. Count the number of weekend orders. Display all orders where the rating is less than 4.0. Find the minimum delivery time. Group the dataset by Day and calculate total number of orders. Draw a bar chart showing day versus order count. Plot a line graph showing the relationship between order time and distance.",
 
-    //   "76. Load the Food Delivery dataset using Pandas. Display summary statistics using describe(). Count the total number of orders. Display all orders where the order value is greater than ₹500. Calculate the average delivery time. Group the dataset by Payment_Mode and calculate total revenue. Draw a pie chart showing payment mode distribution. Plot a scatter plot showing the relationship between delivery time and order value."
+      "76. Load the Food Delivery dataset using Pandas. Display summary statistics using describe(). Count the total number of orders. Display all orders where the order value is greater than ₹500. Calculate the average delivery time. Group the dataset by Payment_Mode and calculate total revenue. Draw a pie chart showing payment mode distribution. Plot a scatter plot showing the relationship between delivery time and order value."
 
-    // ];
+    ];
 
 
     // assignment: if value is array -> pick one of those each login
