@@ -725,176 +725,118 @@
     // for girls sec-A
 
 
-    // const questions = [
-
-    //   "1. Load the E-Commerce dataset using Pandas. Create a new column named Total_Amount by multiplying Price and Quantity. Display the first 5 records. Count the number of orders where Total_Amount is greater than ₹10000. Display all such orders. Calculate the average Total_Amount. Draw a bar chart showing Category versus Total_Amount. Plot a scatter plot showing Total_Amount versus Rating.",
-
-    //   "2. Load the dataset using Pandas. Extract Month from Order_Date and create a new column. Display the last 5 records. Count the number of orders placed in January. Display all January orders. Calculate total revenue for January. Draw a bar chart showing Month versus number of orders. Plot a line graph showing Month versus revenue.",
-
-    //   "3. Load the dataset using Pandas. Create a new column named Price_Per_Item (Price divided by Quantity). Display first 8 records. Count orders where Price_Per_Item is greater than ₹2000. Display such orders. Calculate average Price_Per_Item. Draw bar chart Category versus Price_Per_Item. Plot scatter Price_Per_Item versus Rating.",
-
-    //   "4. Load the dataset using Pandas. Sort the dataset in descending order of Rating. Display top 10 records. Count number of orders where Rating is equal to maximum Rating. Display such orders. Calculate average Price of top rated products. Draw a bar chart City versus Rating. Plot scatter Rating versus Price.",
-
-    //   "5. Load the dataset using Pandas. Filter orders where both Price > ₹5000 and Rating > 4. Display such records. Count them. Calculate total revenue of filtered data. Draw bar chart Category versus filtered revenue. Plot scatter Price versus Rating.",
-
-    //   "6. Load the dataset using Pandas. Create a new column Discount (5% of Price). Calculate Final_Price after discount. Display first 6 records. Count orders where Final_Price < ₹1000. Draw bar chart Category versus Final_Price. Plot scatter Price versus Final_Price.",
-
-    //   "7. Load the dataset using Pandas. Find the top 5 highest Quantity orders. Display those records. Count how many belong to Electronics category. Calculate average Price of these records. Draw bar chart Product_Name versus Quantity. Plot scatter Quantity versus Price.",
-
-    //   "8. Load the dataset using Pandas. Group the dataset by City and calculate total revenue. Display top 3 cities with highest revenue. Count orders in those cities. Draw bar chart City versus revenue. Plot line graph City versus orders.",
-
-    //   "9. Load the dataset using Pandas. Create a new column Delivery_Category (Fast if Delivery_Time ≤3 else Slow). Count number of Fast and Slow deliveries. Display Fast deliveries. Draw pie chart Delivery_Category distribution. Plot scatter Delivery_Time versus Rating.",
-
-    //   "10. Load the dataset using Pandas. Sort dataset by Price in ascending order. Display first 10 cheapest products. Count how many belong to Clothing category. Calculate average Rating. Draw bar chart Product_Name versus Price. Plot scatter Price versus Rating.",
-
-    //   "11. Load the dataset using Pandas. Find median Price. Display all orders where Price is greater than median. Count such orders. Calculate total revenue. Draw bar chart Category versus revenue. Plot scatter Price versus Quantity.",
-
-    //   "12. Load the dataset using Pandas. Group by Category and calculate average Delivery_Time. Identify fastest category. Display its records. Draw bar chart Category versus Delivery_Time. Plot scatter Delivery_Time versus Rating.",
-
-    //   "13. Load the dataset using Pandas. Count frequency of each Product_Name. Display top 5 most frequent products. Calculate average Price of these products. Draw bar chart Product_Name versus frequency. Plot scatter frequency versus Price.",
-
-    //   "14. Load the dataset using Pandas. Extract Day from Order_Date. Count number of orders per day. Identify busiest day. Display its records. Draw line graph Day versus orders. Plot scatter Day versus Price.",
-
-    //   "15. Load the dataset using Pandas. Filter orders where Quantity is maximum. Display such records. Count them. Calculate average Rating. Draw bar chart Product_Name versus Quantity. Plot scatter Quantity versus Rating.",
-
-    //   "16. Load the dataset using Pandas. Calculate cumulative revenue using Total_Amount. Display top 5 contributing orders. Draw bar chart Order_ID versus revenue. Plot line graph cumulative revenue versus Order_ID.",
-
-    //   "17. Load the dataset using Pandas. Create price groups (Low, Medium, High). Count number of orders in each group. Display High price group. Draw bar chart Price_Group versus orders. Plot scatter Price versus Rating.",
-
-    //   "18. Load the dataset using Pandas. Filter orders where Payment_Mode is UPI and Rating > 4. Display those records. Count them. Calculate total revenue. Draw bar chart Payment_Mode versus revenue. Plot scatter Rating versus Price.",
-
-    //   "19. Load the dataset using Pandas. Find minimum and maximum Delivery_Time. Display orders having these values. Count them. Draw bar chart Delivery_Time versus orders. Plot scatter Delivery_Time versus Price.",
-
-    //   "20. Load the dataset using Pandas. Group dataset by Payment_Mode and calculate total Quantity. Identify highest mode. Display its records. Draw pie chart Payment_Mode distribution. Plot scatter Quantity versus Price.",
-
-    //   "21. Load the dataset using Pandas. Sort dataset by Quantity descending. Display top 5 records. Count Electronics orders among them. Calculate average Price. Draw bar chart Product_Name versus Quantity. Plot scatter Quantity versus Rating.",
-
-    //   "22. Load the dataset using Pandas. Filter orders where Price is equal to maximum in each Category. Display those records. Count them. Draw bar chart Category versus Price. Plot scatter Price versus Rating.",
-
-    //   "23. Load the dataset using Pandas. Calculate average Rating per City. Identify highest rated city. Display its records. Draw bar chart City versus Rating. Plot scatter Rating versus Price.",
-
-    //   "24. Load the dataset using Pandas. Create new column Price_Difference (Price minus average Price). Display first 5 records. Count positive differences. Draw bar chart Category versus Price_Difference. Plot scatter Price_Difference versus Rating.",
-
-    //   "25. Load the dataset using Pandas. Find correlation between Price and Delivery_Time. Display result. Draw scatter plot Price versus Delivery_Time. Interpret whether relationship is positive or negative.",
-    //   "26. Load the E-Commerce dataset using Pandas. Create a new column named Total_Amount (Price × Quantity). Display the last 5 records. Count the number of orders where Total_Amount is less than ₹2000. Display those records. Calculate average Total_Amount. Draw a bar chart Category versus Total_Amount. Plot a scatter plot Total_Amount versus Delivery_Time.",
-
-    //   "27. Load the dataset using Pandas. Extract Year from Order_Date. Display first 5 records. Count number of orders in 2024. Display those records. Calculate total revenue for the year. Draw a bar chart Year versus revenue. Plot a line graph Year versus number of orders.",
-
-    //   "28. Load the dataset using Pandas. Create a new column Rating_Level (High if Rating ≥4.5 else Low). Count number of High and Low ratings. Display High rating records. Draw a pie chart Rating_Level distribution. Plot a scatter plot Rating versus Price.",
-
-    //   "29. Load the dataset using Pandas. Sort dataset by Delivery_Time in descending order. Display top 10 records. Count how many have Delivery_Time greater than 5. Calculate average Price. Draw a bar chart Product_Name versus Delivery_Time. Plot a scatter plot Delivery_Time versus Rating.",
-
-    //   "30. Load the dataset using Pandas. Filter orders where Quantity > 1 and Price < ₹2000. Display such records. Count them. Calculate total revenue. Draw a bar chart Category versus revenue. Plot a scatter plot Quantity versus Price.",
-
-    //   "31. Load the dataset using Pandas. Group by Category and calculate maximum Price. Display the result. Count number of categories. Draw a bar chart Category versus maximum Price. Plot a line graph Category versus Price.",
-
-    //   "32. Load the dataset using Pandas. Find the 5 lowest rated orders. Display them. Count how many belong to Electronics. Calculate average Price. Draw a bar chart Product_Name versus Rating. Plot a scatter plot Rating versus Price.",
-
-    //   "33. Load the dataset using Pandas. Create a column Delivery_Status (Late if Delivery_Time > 5 else On-Time). Count Late deliveries. Display those records. Draw a pie chart Delivery_Status distribution. Plot a scatter plot Delivery_Time versus Price.",
-
-    //   "34. Load the dataset using Pandas. Filter orders where Price equals the minimum Price. Display those records. Count them. Calculate average Rating. Draw a bar chart Product_Name versus Price. Plot a scatter plot Price versus Rating.",
-
-    //   "35. Load the dataset using Pandas. Extract Month from Order_Date. Group by Month and count orders. Display the result. Identify lowest month. Draw a bar chart Month versus orders. Plot a line graph Month versus orders.",
-
-    //   "36. Load the dataset using Pandas. Create a new column Price_Increase (Price + 10%). Display first 6 records. Count orders where Price_Increase > ₹5000. Draw a bar chart Category versus Price_Increase. Plot a scatter plot Price versus Price_Increase.",
-
-    //   "37. Load the dataset using Pandas. Sort dataset by Quantity ascending. Display first 10 records. Count how many have Quantity = 1. Calculate average Price. Draw a bar chart Product_Name versus Quantity. Plot a scatter plot Quantity versus Price.",
-
-    //   "38. Load the dataset using Pandas. Group by City and calculate average Rating. Display result. Identify lowest rated city. Draw a bar chart City versus Rating. Plot a scatter plot Rating versus Delivery_Time.",
-
-    //   "39. Load the dataset using Pandas. Filter orders where Rating is exactly 4. Display those records. Count them. Calculate average Price. Draw a bar chart Product_Name versus Rating. Plot a scatter plot Rating versus Price.",
-
-    //   "40. Load the dataset using Pandas. Create a new column Quantity_Category (Single if Quantity=1 else Multiple). Count both categories. Display Multiple orders. Draw a pie chart Quantity_Category distribution. Plot a scatter plot Quantity versus Rating.",
-
-    //   "41. Load the dataset using Pandas. Find top 5 fastest deliveries (lowest Delivery_Time). Display them. Count how many are Electronics. Calculate average Price. Draw a bar chart Product_Name versus Delivery_Time. Plot a scatter plot Delivery_Time versus Price.",
-
-    //   "42. Load the dataset using Pandas. Filter orders where Payment_Mode is Cash and Quantity > 1. Display records. Count them. Calculate total revenue. Draw a bar chart Payment_Mode versus revenue. Plot a scatter plot Quantity versus Price.",
-
-    //   "43. Load the dataset using Pandas. Group by Category and calculate total Quantity. Display result. Identify highest category. Draw a bar chart Category versus Quantity. Plot a line graph Category versus Quantity.",
-
-    //   "44. Load the dataset using Pandas. Sort dataset by Rating ascending. Display bottom 5 records. Count them. Calculate average Price. Draw a bar chart Product_Name versus Rating. Plot a scatter plot Rating versus Price.",
-
-    //   "45. Load the dataset using Pandas. Create a new column Delivery_Score (10 - Delivery_Time). Display first 5 records. Count orders where Delivery_Score > 5. Draw a bar chart Category versus Delivery_Score. Plot a scatter plot Delivery_Time versus Delivery_Score.",
-
-    //   "46. Load the dataset using Pandas. Filter orders where Price is greater than average Price. Display those records. Count them. Calculate average Rating. Draw a bar chart Category versus Price. Plot a scatter plot Price versus Rating.",
-
-    //   "47. Load the dataset using Pandas. Extract Day from Order_Date. Count orders per day. Display result. Identify highest day. Draw a bar chart Day versus orders. Plot a line graph Day versus orders.",
-
-    //   "48. Load the dataset using Pandas. Create a new column Double_Quantity (Quantity × 2). Display first 5 records. Count orders where Double_Quantity > 2. Draw a bar chart Product_Name versus Double_Quantity. Plot a scatter plot Quantity versus Double_Quantity.",
-
-    //   "49. Load the dataset using Pandas. Filter orders where Delivery_Time is equal to maximum Delivery_Time. Display those records. Count them. Calculate average Price. Draw a bar chart Product_Name versus Delivery_Time. Plot a scatter plot Delivery_Time versus Price.",
-
-    //   "50. Load the dataset using Pandas. Group by Payment_Mode and calculate average Delivery_Time. Display result. Identify fastest mode. Draw a bar chart Payment_Mode versus Delivery_Time. Plot a scatter plot Delivery_Time versus Price.",
-
-    //   "51. Load the dataset using Pandas. Sort dataset by Price descending. Display top 8 records. Count how many belong to Appliances. Calculate average Rating. Draw a bar chart Product_Name versus Price. Plot a scatter plot Price versus Rating.",
-
-    //   "52. Load the dataset using Pandas. Create a new column Rating_Square (Rating × Rating). Display first 5 records. Count orders where Rating_Square > 16. Draw a bar chart Product_Name versus Rating_Square. Plot a scatter plot Rating versus Rating_Square."
-
-    // ];
-
-
-
-
-    // ];
-    // for boys sec-a
     const questions = [
 
-      "41. Load the E-Commerce dataset using Pandas. Display the first 5 records of the dataset. Count the number of orders where Payment_Mode is Cash. Display all orders where Delivery_Time is greater than 5 days. Calculate the average Price of all products. Group the dataset by City and calculate total revenue (Price × Quantity). Draw a bar chart showing City versus revenue. Plot a line graph showing the relationship between Order_ID and Price.",
+      "1. Load the E-Commerce dataset using Pandas. Create a new column named Total_Amount by multiplying Price and Quantity. Display the first 5 records. Count the number of orders where Total_Amount is greater than ₹10000. Display all such orders. Calculate the average Total_Amount. Draw a bar chart showing Category versus Total_Amount. Plot a scatter plot showing Total_Amount versus Rating.",
 
-      "42. Load the E-Commerce dataset using Pandas. Display the last 5 records of the dataset. Count the number of orders in Electronics category. Display all orders where Price is greater than ₹10000. Find the maximum Rating. Group the dataset by Payment_Mode and calculate average Rating. Draw a pie chart showing Payment_Mode distribution. Plot a scatter plot showing the relationship between Price and Rating.",
+      "2. Load the dataset using Pandas. Extract Month from Order_Date and create a new column. Display the last 5 records. Count the number of orders placed in January. Display all January orders. Calculate total revenue for January. Draw a bar chart showing Month versus number of orders. Plot a line graph showing Month versus revenue.",
 
-      "43. Load the E-Commerce dataset using Pandas. Display dataset information using info(). Count the number of orders from Hyderabad. Display all orders where Delivery_Time is less than 3 days. Calculate the average Quantity. Group the dataset by Category and calculate total Quantity. Draw a bar chart showing Category versus Quantity. Plot a line graph showing Order_ID versus Delivery_Time.",
+      "3. Load the dataset using Pandas. Create a new column named Price_Per_Item (Price divided by Quantity). Display first 8 records. Count orders where Price_Per_Item is greater than ₹2000. Display such orders. Calculate average Price_Per_Item. Draw bar chart Category versus Price_Per_Item. Plot scatter Price_Per_Item versus Rating.",
 
-      "44. Load the E-Commerce dataset using Pandas. Display the first 8 records of the dataset. Count the number of Card payments. Display all orders where Rating is less than 4.0. Find the minimum Price. Group the dataset by City and calculate average Price. Draw a line graph showing City versus average Price. Plot a scatter plot showing Price versus Rating.",
+      "4. Load the dataset using Pandas. Sort the dataset in descending order of Rating. Display top 10 records. Count number of orders where Rating is equal to maximum Rating. Display such orders. Calculate average Price of top rated products. Draw a bar chart City versus Rating. Plot scatter Rating versus Price.",
 
-      "45. Load the E-Commerce dataset using Pandas. Display the last 8 records. Count the number of Clothing orders. Display all orders where Quantity is greater than 1. Calculate the total revenue. Group the dataset by Category and calculate total revenue. Draw a bar chart Category versus revenue. Plot a scatter plot Quantity versus Price.",
+      "5. Load the dataset using Pandas. Filter orders where both Price > ₹5000 and Rating > 4. Display such records. Count them. Calculate total revenue of filtered data. Draw bar chart Category versus filtered revenue. Plot scatter Price versus Rating.",
 
-      "46. Load the E-Commerce dataset using Pandas. Display the dataset shape. Count the number of UPI payments. Display all orders where Price is less than ₹2000. Find the average Delivery_Time. Group the dataset by Payment_Mode and count orders. Draw a pie chart showing Payment_Mode distribution. Plot a line graph Delivery_Time versus Order_ID.",
+      "6. Load the dataset using Pandas. Create a new column Discount (5% of Price). Calculate Final_Price after discount. Display first 6 records. Count orders where Final_Price < ₹1000. Draw bar chart Category versus Final_Price. Plot scatter Price versus Final_Price.",
 
-      "47. Load the E-Commerce dataset using Pandas. Display column names. Count the number of Footwear orders. Display all orders where Delivery_Time is greater than 6 days. Find the maximum Quantity. Group the dataset by Category and calculate total Quantity. Draw a bar chart Category versus Quantity. Plot a scatter plot Quantity versus Delivery_Time.",
+      "7. Load the dataset using Pandas. Find the top 5 highest Quantity orders. Display those records. Count how many belong to Electronics category. Calculate average Price of these records. Draw bar chart Product_Name versus Quantity. Plot scatter Quantity versus Price.",
 
-      "48. Load the E-Commerce dataset using Pandas. Display data types of all columns. Count the number of orders from Bangalore. Display all orders where Rating is greater than 4.5. Find the minimum Delivery_Time. Group the dataset by City and calculate total revenue. Draw a bar chart City versus revenue. Plot a scatter plot Price versus Delivery_Time.",
+      "8. Load the dataset using Pandas. Group the dataset by City and calculate total revenue. Display top 3 cities with highest revenue. Count orders in those cities. Draw bar chart City versus revenue. Plot line graph City versus orders.",
 
-      "49. Load the E-Commerce dataset using Pandas. Display the first 10 records. Count the number of Accessories orders. Display all orders where Price is between ₹1000 and ₹3000. Calculate the average Rating. Group the dataset by Category and calculate average Rating. Draw a bar chart Category versus Rating. Plot a line graph Order_ID versus Rating.",
+      "9. Load the dataset using Pandas. Create a new column Delivery_Category (Fast if Delivery_Time ≤3 else Slow). Count number of Fast and Slow deliveries. Display Fast deliveries. Draw pie chart Delivery_Category distribution. Plot scatter Delivery_Time versus Rating.",
 
-      "50. Load the E-Commerce dataset using Pandas. Display the last 10 records. Count the number of Cash payments. Display all orders where Quantity equals 2. Find the maximum Price. Group the dataset by Payment_Mode and calculate total revenue. Draw a pie chart Payment_Mode distribution. Plot a scatter plot Quantity versus Price.",
+      "10. Load the dataset using Pandas. Sort dataset by Price in ascending order. Display first 10 cheapest products. Count how many belong to Clothing category. Calculate average Rating. Draw bar chart Product_Name versus Price. Plot scatter Price versus Rating.",
 
-      "51. Load the E-Commerce dataset using Pandas. Display dataset information. Count the number of orders from Chennai. Display all orders where Delivery_Time is less than 4 days. Calculate average Price. Group the dataset by City and count orders. Draw a bar chart City versus orders. Plot a line graph Order_ID versus Delivery_Time.",
+      "11. Load the dataset using Pandas. Find median Price. Display all orders where Price is greater than median. Count such orders. Calculate total revenue. Draw bar chart Category versus revenue. Plot scatter Price versus Quantity.",
 
-      "52. Load the E-Commerce dataset using Pandas. Display first 6 records. Count the number of Electronics orders. Display all orders where Price is greater than ₹20000. Find the highest Rating. Group the dataset by Category and calculate total revenue. Draw a bar chart Category versus revenue. Plot a scatter plot Price versus Rating.",
+      "12. Load the dataset using Pandas. Group by Category and calculate average Delivery_Time. Identify fastest category. Display its records. Draw bar chart Category versus Delivery_Time. Plot scatter Delivery_Time versus Rating.",
 
-      "53. Load the E-Commerce dataset using Pandas. Display last 6 records. Count number of Clothing orders. Display orders where Rating is less than 4. Find minimum Price. Group dataset by Category and calculate average Price. Draw a line graph Category versus average Price. Plot scatter Rating versus Price.",
+      "13. Load the dataset using Pandas. Count frequency of each Product_Name. Display top 5 most frequent products. Calculate average Price of these products. Draw bar chart Product_Name versus frequency. Plot scatter frequency versus Price.",
 
-      "54. Load the E-Commerce dataset using Pandas. Display dataset shape. Count number of UPI payments. Display orders where Delivery_Time is greater than 5 days. Find average Rating. Group dataset by Payment_Mode and count orders. Draw pie chart Payment_Mode distribution. Plot scatter Delivery_Time versus Rating.",
+      "14. Load the dataset using Pandas. Extract Day from Order_Date. Count number of orders per day. Identify busiest day. Display its records. Draw line graph Day versus orders. Plot scatter Day versus Price.",
 
-      "55. Load the E-Commerce dataset using Pandas. Display column names. Count number of Bags category orders. Display orders where Price is less than ₹1500. Find total Quantity sold. Group dataset by Category and calculate total Quantity. Draw bar chart Category versus Quantity. Plot line graph Quantity versus Order_ID.",
+      "15. Load the dataset using Pandas. Filter orders where Quantity is maximum. Display such records. Count them. Calculate average Rating. Draw bar chart Product_Name versus Quantity. Plot scatter Quantity versus Rating.",
 
-      "56. Load the E-Commerce dataset using Pandas. Display first 7 records. Count number of Hyderabad orders. Display orders where Rating is greater than 4. Find average Delivery_Time. Group dataset by City and calculate average Delivery_Time. Draw bar chart City versus Delivery_Time. Plot scatter Rating versus Delivery_Time.",
+      "16. Load the dataset using Pandas. Calculate cumulative revenue using Total_Amount. Display top 5 contributing orders. Draw bar chart Order_ID versus revenue. Plot line graph cumulative revenue versus Order_ID.",
 
-      "57. Load the E-Commerce dataset using Pandas. Display last 7 records. Count number of Appliances orders. Display orders where Price is greater than ₹10000. Find maximum Delivery_Time. Group dataset by Category and calculate average Delivery_Time. Draw bar chart Category versus Delivery_Time. Plot scatter Price versus Delivery_Time.",
+      "17. Load the dataset using Pandas. Create price groups (Low, Medium, High). Count number of orders in each group. Display High price group. Draw bar chart Price_Group versus orders. Plot scatter Price versus Rating.",
 
-      "58. Load the E-Commerce dataset using Pandas. Display dataset info(). Count number of Card payments. Display orders where Quantity is greater than 1. Find average Price. Group dataset by Payment_Mode and calculate average Price. Draw pie chart Payment_Mode distribution. Plot scatter Quantity versus Price.",
+      "18. Load the dataset using Pandas. Filter orders where Payment_Mode is UPI and Rating > 4. Display those records. Count them. Calculate total revenue. Draw bar chart Payment_Mode versus revenue. Plot scatter Rating versus Price.",
 
-      "59. Load the E-Commerce dataset using Pandas. Display first 9 records. Count number of Electronics orders. Display orders where Rating is above average. Find total revenue. Group dataset by Category and calculate revenue. Draw bar chart Category versus revenue. Plot scatter Rating versus Price.",
+      "19. Load the dataset using Pandas. Find minimum and maximum Delivery_Time. Display orders having these values. Count them. Draw bar chart Delivery_Time versus orders. Plot scatter Delivery_Time versus Price.",
 
-      "60. Load the E-Commerce dataset using Pandas. Display last 9 records. Count number of Delhi orders. Display orders where Delivery_Time is less than 3. Find minimum Price. Group dataset by City and calculate average Price. Draw line graph City versus Price. Plot scatter Delivery_Time versus Price.",
+      "20. Load the dataset using Pandas. Group dataset by Payment_Mode and calculate total Quantity. Identify highest mode. Display its records. Draw pie chart Payment_Mode distribution. Plot scatter Quantity versus Price.",
 
-      "61. Load the E-Commerce dataset using Pandas. Display summary statistics. Count total number of orders. Display orders where Price is highest. Find correlation between Price and Rating. Draw scatter plot Price versus Rating and interpret the relationship.",
+      "21. Load the dataset using Pandas. Sort dataset by Quantity descending. Display top 5 records. Count Electronics orders among them. Calculate average Price. Draw bar chart Product_Name versus Quantity. Plot scatter Quantity versus Rating.",
 
-      "62. Load the E-Commerce dataset using Pandas. Display first 5 records. Count number of Clothing orders. Display orders where Quantity equals 2. Find maximum Rating. Group dataset by Category and calculate average Rating. Draw bar chart Category versus Rating. Plot scatter Quantity versus Rating.",
+      "22. Load the dataset using Pandas. Filter orders where Price is equal to maximum in each Category. Display those records. Count them. Draw bar chart Category versus Price. Plot scatter Price versus Rating.",
 
-      "63. Load the E-Commerce dataset using Pandas. Display last 5 records. Count number of Bangalore orders. Display orders where Price is less than ₹1000. Find average Delivery_Time. Group dataset by City and count orders. Draw bar chart City versus orders. Plot line graph Order_ID versus Delivery_Time.",
+      "23. Load the dataset using Pandas. Calculate average Rating per City. Identify highest rated city. Display its records. Draw bar chart City versus Rating. Plot scatter Rating versus Price.",
 
-      "64. Load the E-Commerce dataset using Pandas. Display dataset info(). Count number of Footwear orders. Display orders where Rating is greater than 4. Find average Price. Group dataset by Category and calculate average Price. Draw bar chart Category versus Price. Plot scatter Price versus Rating.",
+      "24. Load the dataset using Pandas. Create new column Price_Difference (Price minus average Price). Display first 5 records. Count positive differences. Draw bar chart Category versus Price_Difference. Plot scatter Price_Difference versus Rating.",
 
-      "65. Load the E-Commerce dataset using Pandas. Display first 8 records. Count number of Cash payments. Display orders where Delivery_Time is greater than 6 days. Find maximum Price. Group dataset by Payment_Mode and calculate revenue. Draw pie chart Payment_Mode distribution. Plot scatter Delivery_Time versus Price."
+      "25. Load the dataset using Pandas. Find correlation between Price and Delivery_Time. Display result. Draw scatter plot Price versus Delivery_Time. Interpret whether relationship is positive or negative.",
+      "26. Load the E-Commerce dataset using Pandas. Create a new column named Total_Amount (Price × Quantity). Display the last 5 records. Count the number of orders where Total_Amount is less than ₹2000. Display those records. Calculate average Total_Amount. Draw a bar chart Category versus Total_Amount. Plot a scatter plot Total_Amount versus Delivery_Time.",
+
+      "27. Load the dataset using Pandas. Extract Year from Order_Date. Display first 5 records. Count number of orders in 2024. Display those records. Calculate total revenue for the year. Draw a bar chart Year versus revenue. Plot a line graph Year versus number of orders.",
+
+      "28. Load the dataset using Pandas. Create a new column Rating_Level (High if Rating ≥4.5 else Low). Count number of High and Low ratings. Display High rating records. Draw a pie chart Rating_Level distribution. Plot a scatter plot Rating versus Price.",
+
+      "29. Load the dataset using Pandas. Sort dataset by Delivery_Time in descending order. Display top 10 records. Count how many have Delivery_Time greater than 5. Calculate average Price. Draw a bar chart Product_Name versus Delivery_Time. Plot a scatter plot Delivery_Time versus Rating.",
+
+      "30. Load the dataset using Pandas. Filter orders where Quantity > 1 and Price < ₹2000. Display such records. Count them. Calculate total revenue. Draw a bar chart Category versus revenue. Plot a scatter plot Quantity versus Price.",
+
+      "31. Load the dataset using Pandas. Group by Category and calculate maximum Price. Display the result. Count number of categories. Draw a bar chart Category versus maximum Price. Plot a line graph Category versus Price.",
+
+      "32. Load the dataset using Pandas. Find the 5 lowest rated orders. Display them. Count how many belong to Electronics. Calculate average Price. Draw a bar chart Product_Name versus Rating. Plot a scatter plot Rating versus Price.",
+
+      "33. Load the dataset using Pandas. Create a column Delivery_Status (Late if Delivery_Time > 5 else On-Time). Count Late deliveries. Display those records. Draw a pie chart Delivery_Status distribution. Plot a scatter plot Delivery_Time versus Price.",
+
+      "34. Load the dataset using Pandas. Filter orders where Price equals the minimum Price. Display those records. Count them. Calculate average Rating. Draw a bar chart Product_Name versus Price. Plot a scatter plot Price versus Rating.",
+
+      "35. Load the dataset using Pandas. Extract Month from Order_Date. Group by Month and count orders. Display the result. Identify lowest month. Draw a bar chart Month versus orders. Plot a line graph Month versus orders.",
+
+      "36. Load the dataset using Pandas. Create a new column Price_Increase (Price + 10%). Display first 6 records. Count orders where Price_Increase > ₹5000. Draw a bar chart Category versus Price_Increase. Plot a scatter plot Price versus Price_Increase.",
+
+      "37. Load the dataset using Pandas. Sort dataset by Quantity ascending. Display first 10 records. Count how many have Quantity = 1. Calculate average Price. Draw a bar chart Product_Name versus Quantity. Plot a scatter plot Quantity versus Price.",
+
+      "38. Load the dataset using Pandas. Group by City and calculate average Rating. Display result. Identify lowest rated city. Draw a bar chart City versus Rating. Plot a scatter plot Rating versus Delivery_Time.",
+
+      "39. Load the dataset using Pandas. Filter orders where Rating is exactly 4. Display those records. Count them. Calculate average Price. Draw a bar chart Product_Name versus Rating. Plot a scatter plot Rating versus Price.",
+
+      "40. Load the dataset using Pandas. Create a new column Quantity_Category (Single if Quantity=1 else Multiple). Count both categories. Display Multiple orders. Draw a pie chart Quantity_Category distribution. Plot a scatter plot Quantity versus Rating.",
+
+      "41. Load the dataset using Pandas. Find top 5 fastest deliveries (lowest Delivery_Time). Display them. Count how many are Electronics. Calculate average Price. Draw a bar chart Product_Name versus Delivery_Time. Plot a scatter plot Delivery_Time versus Price.",
+
+      "42. Load the dataset using Pandas. Filter orders where Payment_Mode is Cash and Quantity > 1. Display records. Count them. Calculate total revenue. Draw a bar chart Payment_Mode versus revenue. Plot a scatter plot Quantity versus Price.",
+
+      "43. Load the dataset using Pandas. Group by Category and calculate total Quantity. Display result. Identify highest category. Draw a bar chart Category versus Quantity. Plot a line graph Category versus Quantity.",
+
+      "44. Load the dataset using Pandas. Sort dataset by Rating ascending. Display bottom 5 records. Count them. Calculate average Price. Draw a bar chart Product_Name versus Rating. Plot a scatter plot Rating versus Price.",
+
+      "45. Load the dataset using Pandas. Create a new column Delivery_Score (10 - Delivery_Time). Display first 5 records. Count orders where Delivery_Score > 5. Draw a bar chart Category versus Delivery_Score. Plot a scatter plot Delivery_Time versus Delivery_Score.",
+
+      "46. Load the dataset using Pandas. Filter orders where Price is greater than average Price. Display those records. Count them. Calculate average Rating. Draw a bar chart Category versus Price. Plot a scatter plot Price versus Rating.",
+
+      "47. Load the dataset using Pandas. Extract Day from Order_Date. Count orders per day. Display result. Identify highest day. Draw a bar chart Day versus orders. Plot a line graph Day versus orders.",
+
+      "48. Load the dataset using Pandas. Create a new column Double_Quantity (Quantity × 2). Display first 5 records. Count orders where Double_Quantity > 2. Draw a bar chart Product_Name versus Double_Quantity. Plot a scatter plot Quantity versus Double_Quantity.",
+
+      "49. Load the dataset using Pandas. Filter orders where Delivery_Time is equal to maximum Delivery_Time. Display those records. Count them. Calculate average Price. Draw a bar chart Product_Name versus Delivery_Time. Plot a scatter plot Delivery_Time versus Price.",
+
+      "50. Load the dataset using Pandas. Group by Payment_Mode and calculate average Delivery_Time. Display result. Identify fastest mode. Draw a bar chart Payment_Mode versus Delivery_Time. Plot a scatter plot Delivery_Time versus Price.",
+
+      "51. Load the dataset using Pandas. Sort dataset by Price descending. Display top 8 records. Count how many belong to Appliances. Calculate average Rating. Draw a bar chart Product_Name versus Price. Plot a scatter plot Price versus Rating.",
+
+      "52. Load the dataset using Pandas. Create a new column Rating_Square (Rating × Rating). Display first 5 records. Count orders where Rating_Square > 16. Draw a bar chart Product_Name versus Rating_Square. Plot a scatter plot Rating versus Rating_Square."
 
     ];
 
 
+
     // assignment: if value is array -> pick one of those each login
     const questionAssignments = {
-      //   "S230542": [5, 15],    // choose ONE of these every login
+      "R230813": [2, 46, 48],    // choose ONE of these every login
       //   "S231195": 16          // single question (works too)
       //   // add more as needed
     };
